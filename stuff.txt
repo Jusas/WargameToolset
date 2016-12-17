@@ -1,0 +1,70 @@
+
+decks.Add("usa", "@AK8ACSk=");
+decks.Add("uk", "@Aq8ACHQ=");
+decks.Add("fra", "@BK8ASAFDYA==");
+decks.Add("wg", "@Bq8ASa0wwA==");
+decks.Add("can", "@CK8ASDkFoA==");
+decks.Add("den", "@Cq8ACRk=");
+decks.Add("swe", "@DK8ASx1uQA==");
+decks.Add("no", "@Dq8ASxxUIA==");
+decks.Add("anz", "@EK8AEPs=");
+decks.Add("jap", "@Eq8ASKROQA==");
+decks.Add("rok", "@FK8ACEk=");
+decks.Add("nl", "@Fq8AS9R8QA==");
+decks.Add("isr", "@GK8ATA9/gA==");
+decks.Add("euro", "@Gg8ASa0+IA==");
+decks.Add("sca", "@Gh8ASxxzAA==");
+decks.Add("cmw", "@Gi8ASDlMAA==");
+decks.Add("bd", "@Gj8ASbQZYA==");
+decks.Add("landj", "@Gm8ASa0+AA==");
+decks.Add("norad", "@Go8ASDlMAA==");
+decks.Add("holger", "@Gp8ASa0+IA==");
+
+decks.Add("eg", "@QK8ASm1VoA==");
+decks.Add("ussr", "@Qq8ACCs=");
+decks.Add("pol", "@RK8ASmwdgA==");
+decks.Add("cz", "@Rq8AErQ=");
+decks.Add("chi", "@SK8ACGk=");
+decks.Add("nk", "@Sq8ASLZAIA==");
+decks.Add("nswp", "@TF8AErQ=");
+decks.Add("rd", "@TE8ACHc=");
+
+
+"usa": 10,
+"uk": 42,
+"fra": 74,
+"wg": 106,
+"can": 138,
+"den": 170,
+"swe": 202,
+"no": 234,
+"anz": 266,
+"jap": 298,
+"rok": 330,
+"nl": 362,
+"isr": 394,
+"euro": 416,
+"sca": 417,
+"cmw": 418,
+"bd": 419,
+"landj": 422,
+"norad": 424,
+"holger": 425,
+"eg": 10,
+"ussr": 42,
+"pol": 74,
+"cz": 106,
+"chi": 138,
+"nk": 170,
+"nswp": 197,
+"rd": 196,
+mixblu : 426
+mixred : 202
+
+
+mb @Gq8ASbRUgA==
+@TK8ACGk=
+
+UnitToolbox
+- repository interface to get unit information
+- repository implementation for getting unit info from json files loaded to memory

@@ -1,0 +1,43 @@
+﻿// This file was created manually, from inspecting deck codes.
+[
+  {
+    "id": 0,
+    "eugenString": "Motorized",
+    "name": "Motorized"
+  },
+  {
+    "id": 1,
+    "eugenString": "Armored",
+    "name": "Armored"
+  },
+  {
+    "id": 2,
+    "eugenString": "Support",
+    "name": "Support"
+  },
+  {
+    "id": 3,
+    "eugenString": "Marine",
+    "name": "Marine"
+  },
+  {
+    "id": 4,
+    "eugenString": "Mechanized",
+    "name": "Mechanized"
+  },
+  {
+    "id": 5,
+    "eugenString": "Airborne",
+    "name": "Airborne"
+  },
+  {
+    "id": 6,
+    "eugenString": "Navy",
+    "name": "Navy"
+  },
+  {
+    "id": 7,
+    "eugenString": "",
+    "name": "No specialization"
+  }
+]

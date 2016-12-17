@@ -1,0 +1,3 @@
+[submodule "DeckUtilities/WRD/moddingSuite"]
+	path = DeckUtilities/WRD/moddingSuite
+	url = https://github.com/enohka/moddingSuite.git

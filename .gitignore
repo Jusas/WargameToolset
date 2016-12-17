@@ -1,0 +1,6 @@
+.vs/
+ReplayToolbox.Tests/obj/
+ReplayToolbox.Tests/bin/
+obj/
+bin/
+packages/

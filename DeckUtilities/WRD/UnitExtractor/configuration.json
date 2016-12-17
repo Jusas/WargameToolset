@@ -1,0 +1,56 @@
+﻿{
+  "UnitDataFile": "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510025133\\NDF_Win.dat",
+  "NationCoalitionAvailabilityBonusDataFile": "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510025133\\NDF_Win.dat",
+  "DeckSpecVeterancyBonusDataFile": "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510025133\\NDF_Win.dat",
+  "LocalizationsDataFile": "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510019512\\510024196\\ZZ_Win.dat",
+  "UnitNamesDataFile": "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510024744\\510025133\\ZZ_Win.dat",
+  "OutputDirectory": ".\\",
+  "DeckroomSerializerUnitLists": [
+    {
+      "FactionName": "BLUEFOR",
+      "Source": "OtanUnitIds"
+    },
+    {
+      "FactionName": "REDFOR",
+      "Source": "PactUnitIds"
+    }
+  ],
+  "UnitCategories": [
+    {
+      "Value": "3",
+      "Name": "LOGISTICS"
+    },
+    {
+      "Value": "10",
+      "Name": "RECON"
+    },
+    {
+      "Value": "9",
+      "Name": "ARMOR"
+    },
+    {
+      "Value": "6",
+      "Name": "INFANTRY"
+    },
+    {
+      "Value": "13",
+      "Name": "SUPPORT"
+    },
+    {
+      "Value": "8",
+      "Name": "VEHICLE"
+    },
+    {
+      "Value": "11",
+      "Name": "HELICOPTER"
+    },
+    {
+      "Value": "7",
+      "Name": "PLANE"
+    },
+    {
+      "Value": "12",
+      "Name": "NAVY"
+    }
+  ]
+}
