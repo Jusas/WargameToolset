@@ -68,3 +68,97 @@ mb @Gq8ASbRUgA==
 UnitToolbox
 - repository interface to get unit information
 - repository implementation for getting unit info from json files loaded to memory
+
+
+Make simple UI project to help select what to extract.
+
+everything.ndfbin
+- TDeckAttributes
+	- MapCoalitionToCountry (coalitions), MapFactionToCoalition, MapFactionToCountry -OR SIMPLER, ShowRoomDeckSer... coalitions, nationalities, etc
+	- MapUnitCategoryToDate (eras, by index)
+	- UnitTypeList (specializations, by index)
+
+STILL NEEDED: deck codes for countries/coalitions
+
+deck nationality corresponds to:
+- TShowRoomDeckSerializer indexes
+
+	- 0 / 1, determines if we check countriesNATO (15 nations) or countriesPACT (9 nations)
+	- next 5 bits: 
+		if number is smaller than total number of countries, it's a country, corresponds to the index in data. Next 5 bytes is the number of coalitions in the game (or the index of the coalition it belongs to? 10 is out of bounds, over the last index. that makes no sense.)
+		if number is the amount of countries, it's a coalition. Then the next 5 bits determine which coalition it is (index)
+
+		=> nation restriction, if first 5 bytes are within nation list index range. Next 5 bytes are coalition restriction, which is out of bounds, which means no restriction.
+		=> coalition restriction, if first 5 bytes are out of bounds of nation list index range. Next 5 bytes define coalition restriction. First 5 bytes then basically define national restriction, which means no restriction, because the index is out of bounds.
+
+
+
+	- first bit always seems to be zero?
+	- first 5 bytes: number of countries in the faction?
+	- country: first 5 bytes are the index of the country code
+	- coalitions: last 5 bytes seem to point to index
+	- 
+
+
+unit type list (deck specs)
+TDeckAttributes.UnitTypeList, localization hashes (#Motorised Motorized)
+
+
+MapUnitCategoryToList has all 3 categories
+	Map of lochash, int year
+
+MapFactionToCountry
+	Map of (int(faction), collection)
+	collection has TableStrings of countries, save (faction,countrycode) information
+MapFactionToCoalition
+	same as above
+MapCoalitionToCountry
+	map of (countrycode,collection)
+	a list of coalitions with countries listed in the collection
+	save (coalition,country) information
+
+TShowRoomDeckSerializer
+- collect (and save indexes!)
+	Nationalities
+	CountriesNATO
+	CountriesPACT
+	Coalitions
+	UnitTypes
+	Categories?
+
+
+
+gdconstanteoriginal.ndfbin
+TModernWarfareTunableConstante
+FightingUnitesByDeckUnitesType
+
+
+	#PACT REDFOR 
+	5EB3680000000000
+
+	5EB3686567350000
+	DAAE79D19C330000
+
+
+
+	BLUFOR
+	99B7600000000000
+	5C067D1603000000
+
+	D88E79D19C330000
+	99B7606567350000
+
+
+	SUPPORT
+	1E9769DAD7010000
+
+	#Support Support
+	DAD77965E3000000
+
+	INFANTRY
+	23E7610B844D0000
+
+	Infantry units
+	0B844D1F546A1D00
+
+

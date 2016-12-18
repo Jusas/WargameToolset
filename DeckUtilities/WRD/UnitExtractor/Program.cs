@@ -18,12 +18,21 @@ namespace UnitExtractor
 
         static void Main(string[] args)
         {
-            var confjson = File.ReadAllText("configuration.json");
-            var conf = JsonConvert.DeserializeObject<Configuration>(confjson);
-            UnitDataExtractor extractor = new UnitDataExtractor();
-            extractor.ExtractUsingConfiguration(conf);
-        }
+            var exporter = new JsonFileExporter(Configuration.FromFile("configuration.json"), new DataSource(), @".\Json");
+            exporter.AddExporter(DeckData.GetUnitCategories, "DeckCategories.json");
+            exporter.AddExporter(DeckData.GetNationalities, "DeckNationalities.json");
+            exporter.AddExporter(DeckData.GetCountries, "DeckCountries.json");
+            exporter.AddExporter(DeckData.GetCoalitions, "DeckCoalitions.json");
+            exporter.AddExporter(DeckData.GetUnitTypes, "DeckUnitTypes.json");
+            exporter.AddExporter(DeckData.GetDeckModifiers, "DeckModifiers.json");
+            exporter.AddExporter(DeckData.GetFactionMappings, "DeckFactionMappings.json");
 
+            exporter.AddExporter(UnitData.GetUnits, "Units.json");
+
+
+            exporter.Export();
+        }
+        
 
         /*
         class Unit

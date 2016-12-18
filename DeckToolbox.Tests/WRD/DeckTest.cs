@@ -76,7 +76,7 @@ namespace DeckToolbox.Tests
             {
                 DecodedDeck dk = new DecodedDeck(d);
                 //output.WriteLine(dk.NationalityCode.ToString());
-                output.WriteLine(string.Join(" ", Convert.ToString(dk.NationalityId, 2).PadLeft(10, '0')));
+                output.WriteLine(string.Join(" ", Convert.ToString(dk.CountryId, 2).PadLeft(10, '0')));
             }
 
             /*DecodedDeck deck = new DecodedDeck(deckString);

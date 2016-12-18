@@ -14,10 +14,10 @@ namespace DeckToolbox.WRD
         public string SourceDeckString { get; private set; }
 
         public int FactionId { get; set; }
-        public int NationalityId { get; set; }
+        public int CountryId { get; set; }
         public int CoalitionId { get; set; }
-        public int SpecializationId { get; set; }
-        public int EraId { get; set; }
+        public int UnitTypeId { get; set; } // Aka deck specialization
+        public int CategoryId { get; set; } // Aka era (cat a, cat b, cat c)
 
         public List<DecodedUnitCard> DecodedUnitCards { get; set; }
 
@@ -45,18 +45,18 @@ namespace DeckToolbox.WRD
             FactionId = (int)dataBytes.GetBitSection(0, 2);
             bitOffset += 2;
             
-            // Nationality and coalition, 10 bits.
+            // Country and coalition, 10 bits.
             // Note: Used to be 9 bits, did they run out of space?
-            NationalityId = (int)dataBytes.GetBitSection(bitOffset, 5);
+            CountryId = (int)dataBytes.GetBitSection(bitOffset, 5);
             bitOffset += 5;
 
             CoalitionId = (int)dataBytes.GetBitSection(bitOffset, 5);
             bitOffset += 5;
 
-            SpecializationId = (int)dataBytes.GetBitSection(bitOffset, 3);
+            UnitTypeId = (int)dataBytes.GetBitSection(bitOffset, 3);
             bitOffset += 3;
 
-            EraId = (int)dataBytes.GetBitSection(bitOffset, 2);
+            CategoryId = (int)dataBytes.GetBitSection(bitOffset, 2);
             bitOffset += 2;
 
             int numUnitsWithTwoTransports = (int)dataBytes.GetBitSection(bitOffset, 4);

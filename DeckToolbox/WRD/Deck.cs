@@ -8,7 +8,8 @@ namespace DeckToolbox.WRD
     public class Deck : DecodedDeck
     {
         public string Faction { get; set; }
-        public string Nationality { get; set; }
+        public string Country { get; set; }
+        public string Coalition { get; set; }
         public string Specialization { get; set; }
         public string Era { get; set; }
 

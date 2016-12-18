@@ -20,6 +20,7 @@
     <Content Include="WRD\StaticData\specializations.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="WRD\StaticData\UnitTypes.json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NETStandard.Library">

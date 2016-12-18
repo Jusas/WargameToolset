@@ -1,0 +1,38 @@
+﻿[
+  {
+    "Value": "3",
+    "Name": "LOGISTICS"
+  },
+  {
+    "Value": "10",
+    "Name": "RECON"
+  },
+  {
+    "Value": "9",
+    "Name": "ARMOR"
+  },
+  {
+    "Value": "6",
+    "Name": "INFANTRY"
+  },
+  {
+    "Value": "13",
+    "Name": "SUPPORT"
+  },
+  {
+    "Value": "8",
+    "Name": "VEHICLE"
+  },
+  {
+    "Value": "11",
+    "Name": "HELICOPTER"
+  },
+  {
+    "Value": "7",
+    "Name": "PLANE"
+  },
+  {
+    "Value": "12",
+    "Name": "NAVY"
+  }
+]

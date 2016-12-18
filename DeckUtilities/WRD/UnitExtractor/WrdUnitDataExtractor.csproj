@@ -49,12 +49,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModels\Configuration.cs" />
+    <Compile Include="DataModels\DeckModifierSet.cs" />
     <Compile Include="DataModels\NationCoalitionAvailabilityBonus.cs" />
     <Compile Include="DataModels\SpecializationVeterancyBonus.cs" />
+    <Compile Include="DataSource.cs" />
+    <Compile Include="DeckData.cs" />
+    <Compile Include="JsonFileExporter.cs" />
+    <Compile Include="IExporter.cs" />
+    <Compile Include="NdfObjectExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataModels\Unit.cs" />
-    <Compile Include="UnitDataExtractor.cs" />
+    <Compile Include="UnitData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
