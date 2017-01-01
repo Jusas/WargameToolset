@@ -8,21 +8,6 @@
     <EmbeddedResource Include="**\*.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WRD\StaticData\eras.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="WRD\StaticData\factions.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="WRD\StaticData\nation-coalition.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="WRD\StaticData\specializations.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="WRD\StaticData\UnitTypes.json" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="NETStandard.Library">
       <Version>1.6.1</Version>
     </PackageReference>
