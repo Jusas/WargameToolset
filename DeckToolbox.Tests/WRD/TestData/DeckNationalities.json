@@ -1,0 +1,21 @@
+{
+  "MetaData": {
+    "DataIdentifier": "UnitNationalities",
+    "ExtractedFrom": [
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510057270\\NDF_Win.dat:pc\\ndf\\patchable\\gfx\\everything.ndfbin"
+    ],
+    "ExtractionDate": null
+  },
+  "Data": [
+    {
+      "Id": 0,
+      "Nationality": 0,
+      "Name": "BLUFOR"
+    },
+    {
+      "Id": 1,
+      "Nationality": 1,
+      "Name": "REDFOR"
+    }
+  ]
+}

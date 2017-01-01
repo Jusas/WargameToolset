@@ -1,0 +1,111 @@
+{
+  "MetaData": {
+    "DataIdentifier": "UnitCountries",
+    "ExtractedFrom": [
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510057270\\NDF_Win.dat:pc\\ndf\\patchable\\gfx\\everything.ndfbin"
+    ],
+    "ExtractionDate": null
+  },
+  "Data": {
+    "CountriesNATO": [
+      {
+        "Id": 0,
+        "Name": "US"
+      },
+      {
+        "Id": 1,
+        "Name": "UK"
+      },
+      {
+        "Id": 2,
+        "Name": "FR"
+      },
+      {
+        "Id": 3,
+        "Name": "RFA"
+      },
+      {
+        "Id": 4,
+        "Name": "CAN"
+      },
+      {
+        "Id": 5,
+        "Name": "DAN"
+      },
+      {
+        "Id": 6,
+        "Name": "SWE"
+      },
+      {
+        "Id": 7,
+        "Name": "NOR"
+      },
+      {
+        "Id": 8,
+        "Name": "ANZ"
+      },
+      {
+        "Id": 9,
+        "Name": "JAP"
+      },
+      {
+        "Id": 10,
+        "Name": "ROK"
+      },
+      {
+        "Id": 11,
+        "Name": "HOL"
+      },
+      {
+        "Id": 12,
+        "Name": "ISR"
+      },
+      {
+        "Id": 13,
+        "Name": "FIN"
+      },
+      {
+        "Id": 14,
+        "Name": "YUG"
+      }
+    ],
+    "CountriesPACT": [
+      {
+        "Id": 0,
+        "Name": "RDA"
+      },
+      {
+        "Id": 1,
+        "Name": "URSS"
+      },
+      {
+        "Id": 2,
+        "Name": "POL"
+      },
+      {
+        "Id": 3,
+        "Name": "TCH"
+      },
+      {
+        "Id": 4,
+        "Name": "CHI"
+      },
+      {
+        "Id": 5,
+        "Name": "NK"
+      },
+      {
+        "Id": 6,
+        "Name": "FIN"
+      },
+      {
+        "Id": 7,
+        "Name": "YUG"
+      },
+      {
+        "Id": 8,
+        "Name": "SWE"
+      }
+    ]
+  }
+}

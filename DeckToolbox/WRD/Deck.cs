@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace DeckToolbox.WRD
-{
-    public class Deck : DecodedDeck
+{ // Not needed. ISerializable, IDeserializable interfaces with implementation for deck code -> RawDeck + viceversa.
+    // Make interfaces for resolving game data values from deck serializer values.
+    // Then, we could have deck builder that utilizes deck serializer, resolvers, etc.
+    public class Deck : RawDeck
     {
         public string Faction { get; set; }
         public string Country { get; set; }
@@ -16,7 +18,7 @@ namespace DeckToolbox.WRD
 
         public Deck(
             IDeckValueResolver deckValueResolver, 
-            IUnitValueResolver unitValueResolver
+            IUnitResolver unitValueResolver
             ) : base()
         {
 
@@ -24,7 +26,7 @@ namespace DeckToolbox.WRD
 
         public Deck(
             IDeckValueResolver deckValueResolver,
-            IUnitValueResolver unitValueResolver,
+            IUnitResolver unitValueResolver,
             string base64deckString
             ) : base(base64deckString)
         {

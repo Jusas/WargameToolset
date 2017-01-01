@@ -1,0 +1,149 @@
+{
+  "MetaData": {
+    "DataIdentifier": "FactionMappings",
+    "ExtractedFrom": [
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510057270\\NDF_Win.dat:pc\\ndf\\patchable\\gfx\\everything.ndfbin"
+    ],
+    "ExtractionDate": null
+  },
+  "Data": {
+    "MapFactionToCountry": [
+      {
+        "Key": "0",
+        "Values": [
+          "US",
+          "UK",
+          "FR",
+          "RFA",
+          "CAN",
+          "DAN",
+          "SWE",
+          "NOR",
+          "ANZ",
+          "JAP",
+          "ROK",
+          "HOL",
+          "ISR"
+        ]
+      },
+      {
+        "Key": "1",
+        "Values": [
+          "RDA",
+          "URSS",
+          "POL",
+          "FIN",
+          "YUG",
+          "TCH",
+          "CHI",
+          "NK"
+        ]
+      }
+    ],
+    "MapFactionToCoalition": [
+      {
+        "Key": "0",
+        "Values": [
+          "EURO",
+          "SCAND",
+          "CMW",
+          "BLUEDRAG",
+          "LAND",
+          "NORAD",
+          "NLGR"
+        ]
+      },
+      {
+        "Key": "1",
+        "Values": [
+          "NSWP",
+          "REDDRAG",
+          "FINPOL",
+          "YUGVAK"
+        ]
+      }
+    ],
+    "MapCoalitionToCountry": [
+      {
+        "Key": "EURO",
+        "Values": [
+          "FR",
+          "RFA"
+        ]
+      },
+      {
+        "Key": "NSWP",
+        "Values": [
+          "RDA",
+          "POL",
+          "TCH"
+        ]
+      },
+      {
+        "Key": "CMW",
+        "Values": [
+          "ANZ",
+          "UK",
+          "CAN"
+        ]
+      },
+      {
+        "Key": "SCAND",
+        "Values": [
+          "DAN",
+          "SWE",
+          "NOR"
+        ]
+      },
+      {
+        "Key": "BLUEDRAG",
+        "Values": [
+          "JAP",
+          "ROK"
+        ]
+      },
+      {
+        "Key": "REDDRAG",
+        "Values": [
+          "NK",
+          "CHI"
+        ]
+      },
+      {
+        "Key": "LAND",
+        "Values": [
+          "RFA",
+          "DAN"
+        ]
+      },
+      {
+        "Key": "NORAD",
+        "Values": [
+          "US",
+          "CAN"
+        ]
+      },
+      {
+        "Key": "NLGR",
+        "Values": [
+          "HOL",
+          "RFA"
+        ]
+      },
+      {
+        "Key": "FINPOL",
+        "Values": [
+          "POL",
+          "FIN"
+        ]
+      },
+      {
+        "Key": "YUGVAK",
+        "Values": [
+          "YUG",
+          "TCH"
+        ]
+      }
+    ]
+  }
+}

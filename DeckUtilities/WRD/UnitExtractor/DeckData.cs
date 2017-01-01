@@ -20,8 +20,21 @@ namespace UnitExtractor
         public static object GetUnitCategories(Configuration configuration, DataSource dataSource)
         {
             var source = dataSource.GetDataSource<NdfBinary>(configuration.DataMappings["DeckSerializationData"]);
-            List<object> output = new List<object>();
-
+            List<object> outputData = new List<object>();
+            var output = new ExportedDataTable()
+            {
+                MetaData = new ExportedDataTable.MetaDataModel()
+                {
+                    DataIdentifier = "UnitCategories",
+                    ExtractedFrom = new[]
+                    {
+                        configuration.DataMappings["DeckSerializationData"],
+                        configuration.DataMappings["LocalizationOutgame"]
+                    }
+                },
+                Data = outputData
+            };
+            
             var deckAttributes = source.Classes.FirstOrDefault(c => c.Name == "TDeckAttributes");
             var instance = deckAttributes.Instances.First();
             var eraMap = instance.PropertyValues.First(x => x.Property.Name == "MapUnitCategoryToDate").Value as NdfMapList;
@@ -31,7 +44,7 @@ namespace UnitExtractor
                 var key = keyValueMap.Key.Value as NdfLocalisationHash;
                 var value = ((MapValueHolder)keyValueMap.Value).Value as NdfUInt32;
 
-                output.Add(new
+                outputData.Add(new
                 {
                     Id = i,
                     LocalizationId = key.ToString(),
@@ -46,7 +59,19 @@ namespace UnitExtractor
         public static object GetNationalities(Configuration configuration, DataSource dataSource)
         {
             var source = dataSource.GetDataSource<NdfBinary>(configuration.DataMappings["DeckSerializationData"]);
-            List<object> output = new List<object>();
+            List<object> outputData = new List<object>();
+            var output = new ExportedDataTable()
+            {
+                MetaData = new ExportedDataTable.MetaDataModel()
+                {
+                    DataIdentifier = "UnitNationalities",
+                    ExtractedFrom = new[]
+                    {
+                        configuration.DataMappings["DeckSerializationData"]
+                    }
+                },
+                Data = outputData
+            };
 
             var deckSerializer = source.Classes.FirstOrDefault(c => c.Name == "TShowRoomDeckSerializer");
             var instance = deckSerializer.Instances.First();
@@ -55,7 +80,7 @@ namespace UnitExtractor
             {
                 var nationality = nationalities[i].Value as NdfInt32;
                 
-                output.Add(new
+                outputData.Add(new
                 {
                     Id = i,
                     Nationality = (int)nationality.Value,
@@ -70,8 +95,20 @@ namespace UnitExtractor
         public static object GetCountries(Configuration configuration, DataSource dataSource)
         {
             var source = dataSource.GetDataSource<NdfBinary>(configuration.DataMappings["DeckSerializationData"]);
-            Dictionary<string, List<object>> output = new Dictionary<string, List<object>>();
-
+            Dictionary<string, List<object>> outputData = new Dictionary<string, List<object>>();
+            var output = new ExportedDataTable()
+            {
+                MetaData = new ExportedDataTable.MetaDataModel()
+                {
+                    DataIdentifier = "UnitCountries",
+                    ExtractedFrom = new[]
+                    {
+                        configuration.DataMappings["DeckSerializationData"]
+                    }
+                },
+                Data = outputData
+            };
+            
             var deckSerializer = source.Classes.FirstOrDefault(c => c.Name == "TShowRoomDeckSerializer");
             var instance = deckSerializer.Instances.First();
             var countriesNato = instance.PropertyValues.First(x => x.Property.Name == "CountriesNATO");
@@ -82,7 +119,7 @@ namespace UnitExtractor
             for (var i = 0; i < countryGroups.Length; i++)
             {
                 var countries = new List<object>();
-                output.Add(countryGroups[i].Property.Name, countries);
+                outputData.Add(countryGroups[i].Property.Name, countries);
                 var list = countryGroups[i].Value as NdfCollection;
 
                 for(var j = 0; j < list.Count; j++)
@@ -104,7 +141,19 @@ namespace UnitExtractor
         public static object GetCoalitions(Configuration configuration, DataSource dataSource)
         {
             var source = dataSource.GetDataSource<NdfBinary>(configuration.DataMappings["DeckSerializationData"]);
-            List<object> output = new List<object>();
+            List<object> outputData = new List<object>();
+            var output = new ExportedDataTable()
+            {
+                MetaData = new ExportedDataTable.MetaDataModel()
+                {
+                    DataIdentifier = "UnitCoalitions",
+                    ExtractedFrom = new[]
+                    {
+                        configuration.DataMappings["DeckSerializationData"]
+                    }
+                },
+                Data = outputData
+            };
 
             var deckSerializer = source.Classes.FirstOrDefault(c => c.Name == "TShowRoomDeckSerializer");
             var instance = deckSerializer.Instances.First();
@@ -113,7 +162,7 @@ namespace UnitExtractor
             for (var i = 0; i < coalitions.Count; i++)
             {
                 var coalition = coalitions[i].Value.ToString();
-                output.Add(new
+                outputData.Add(new
                 {
                     Id = i,
                     Name = coalition
@@ -132,7 +181,20 @@ namespace UnitExtractor
         public static object GetUnitTypes(Configuration configuration, DataSource dataSource)
         {
             var source = dataSource.GetDataSource<NdfBinary>(configuration.DataMappings["DeckSerializationData"]);
-            List<object> output = new List<object>();
+            List<object> outputData = new List<object>();
+            var output = new ExportedDataTable()
+            {
+                MetaData = new ExportedDataTable.MetaDataModel()
+                {
+                    DataIdentifier = "UnitTypes",
+                    ExtractedFrom = new[]
+                    {
+                        configuration.DataMappings["DeckSerializationData"],
+                        configuration.DataMappings["LocalizationOutgame"]
+                    }
+                },
+                Data = outputData
+            };
 
             var deckSerializer = source.Classes.FirstOrDefault(c => c.Name == "TShowRoomDeckSerializer");
             var instance = deckSerializer.Instances.First();
@@ -141,7 +203,7 @@ namespace UnitExtractor
             for (var i = 0; i < unitTypes.Count; i++)
             {
                 var ut = unitTypes[i].Value as NdfLocalisationHash;
-                output.Add(new
+                outputData.Add(new
                 {
                     Id = i,
                     LocalizationId = ut.ToString(),
@@ -161,7 +223,21 @@ namespace UnitExtractor
         /// <returns></returns>
         public static object GetFactories(Configuration configuration, DataSource dataSource)
         {
-            return new List<object>
+            var outputData = new List<object>();
+            var output = new ExportedDataTable()
+            {
+                MetaData = new ExportedDataTable.MetaDataModel()
+                {
+                    DataIdentifier = "UnitFactories",
+                    ExtractedFrom = new[]
+                    {
+                        "no source"
+                    }
+                },
+                Data = outputData
+            };
+
+            outputData.AddRange(new[]
             {
                 new
                 {
@@ -203,13 +279,27 @@ namespace UnitExtractor
                     Id = 12,
                     Name = "Navy"
                 }
-            };
+            });
+
+            return output;
         }
 
         public static object GetDeckModifiers(Configuration configuration, DataSource dataSource)
         {
             var source = dataSource.GetDataSource<NdfBinary>(configuration.DataMappings["DeckSerializationData"]);
-            Dictionary<string, List<object>> output = new Dictionary<string, List<object>>();
+            Dictionary<string, List<object>> outputData = new Dictionary<string, List<object>>();
+            var output = new ExportedDataTable()
+            {
+                MetaData = new ExportedDataTable.MetaDataModel()
+                {
+                    DataIdentifier = "DeckModifiers",
+                    ExtractedFrom = new[]
+                    {
+                        configuration.DataMappings["DeckSerializationData"]
+                    }
+                },
+                Data = outputData
+            };
 
             var deckSerializer = source.Classes.FirstOrDefault(c => c.Name == "TShowRoomDeckRuleManager");
             var instance = deckSerializer.Instances.First();
@@ -225,7 +315,7 @@ namespace UnitExtractor
             for (var i = 0; i < allModifiers.Count; i++)
             {
                 var modifiers = new List<object>();
-                output.Add(allModifiers[i].Property.Name, modifiers);
+                outputData.Add(allModifiers[i].Property.Name, modifiers);
                 var list = allModifiers[i].Value as NdfMapList;
 
                 for (var j = 0; j < list.Count; j++)
@@ -261,7 +351,19 @@ namespace UnitExtractor
         public static object GetFactionMappings(Configuration configuration, DataSource dataSource)
         {
             var source = dataSource.GetDataSource<NdfBinary>(configuration.DataMappings["DeckSerializationData"]);
-            Dictionary<string, List<object>> output = new Dictionary<string, List<object>>();
+            Dictionary<string, List<object>> outputData = new Dictionary<string, List<object>>();
+            var output = new ExportedDataTable()
+            {
+                MetaData = new ExportedDataTable.MetaDataModel()
+                {
+                    DataIdentifier = "FactionMappings",
+                    ExtractedFrom = new[]
+                    {
+                        configuration.DataMappings["DeckSerializationData"]
+                    }
+                },
+                Data = outputData
+            };
 
             var deckAttributes = source.Classes.FirstOrDefault(c => c.Name == "TDeckAttributes");
             var instance = deckAttributes.Instances.First();
@@ -274,7 +376,7 @@ namespace UnitExtractor
             for (var i = 0; i < allMappings.Count; i++)
             {
                 var mappings = new List<object>();
-                output.Add(allMappings[i].Property.Name, mappings);
+                outputData.Add(allMappings[i].Property.Name, mappings);
                 var list = allMappings[i].Value as NdfMapList;
 
                 for (var j = 0; j < list.Count; j++)

@@ -9,7 +9,7 @@ namespace DeckToolbox.WRD
 {
     // http://forums.eugensystems.com/viewtopic.php?p=798441#p798441
 
-    public class DecodedDeck
+    public class RawDeck
     {
         public string SourceDeckString { get; private set; }
 
@@ -21,12 +21,12 @@ namespace DeckToolbox.WRD
 
         public List<DecodedUnitCard> DecodedUnitCards { get; set; }
 
-        public DecodedDeck(string base64DeckString)
+        public RawDeck(string base64DeckString)
         {
             BuildFromDeckString(base64DeckString);
         }
     
-        public DecodedDeck()
+        public RawDeck()
         {
             DecodedUnitCards = new List<DecodedUnitCard>();
         }

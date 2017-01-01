@@ -1,0 +1,30 @@
+{
+  "MetaData": {
+    "DataIdentifier": "UnitCategories",
+    "ExtractedFrom": [
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510057270\\NDF_Win.dat:pc\\ndf\\patchable\\gfx\\everything.ndfbin",
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510053208\\510057270\\ZZ_Win.dat:pc\\localisation\\us\\localisation\\interface_outgame.dic"
+    ],
+    "ExtractionDate": null
+  },
+  "Data": [
+    {
+      "Id": 0,
+      "LocalizationId": "41E22D4DD9380000",
+      "Name": "#CatC Before 1980",
+      "Year": 1980
+    },
+    {
+      "Id": 1,
+      "LocalizationId": "46E22D4DD9380000",
+      "Name": "#CatB Before 1985",
+      "Year": 1985
+    },
+    {
+      "Id": 2,
+      "LocalizationId": "81E22D4DD9380000",
+      "Name": "#CatA 1986\\+",
+      "Year": 1990
+    }
+  ]
+}

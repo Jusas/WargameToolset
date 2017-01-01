@@ -1,0 +1,43 @@
+{
+  "MetaData": {
+    "DataIdentifier": "UnitFactories",
+    "ExtractedFrom": [
+      "no source"
+    ],
+    "ExtractionDate": null
+  },
+  "Data": [
+    {
+      "Id": 3,
+      "Name": "Logistics"
+    },
+    {
+      "Id": 10,
+      "Name": "Recon"
+    },
+    {
+      "Id": 9,
+      "Name": "Armor"
+    },
+    {
+      "Id": 6,
+      "Name": "Infantry"
+    },
+    {
+      "Id": 13,
+      "Name": "Support"
+    },
+    {
+      "Id": 11,
+      "Name": "Helicopter"
+    },
+    {
+      "Id": 7,
+      "Name": "Plane"
+    },
+    {
+      "Id": 12,
+      "Name": "Navy"
+    }
+  ]
+}

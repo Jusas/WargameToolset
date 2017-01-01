@@ -1,0 +1,828 @@
+{
+  "MetaData": {
+    "DataIdentifier": "DeckModifiers",
+    "ExtractedFrom": [
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510057270\\NDF_Win.dat:pc\\ndf\\patchable\\gfx\\everything.ndfbin"
+    ],
+    "ExtractionDate": null
+  },
+  "Data": {
+    "ModifiersForCountry": [
+      {
+        "GrantedTo": "US",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 10,
+            "10": 10,
+            "9": 10,
+            "6": 10,
+            "13": 10,
+            "8": 10,
+            "11": 10,
+            "7": 10,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "UK",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "FR",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "RFA",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "CAN",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 40,
+            "10": 40,
+            "9": 40,
+            "6": 40,
+            "13": 40,
+            "8": 40,
+            "11": 40,
+            "7": 40,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "DAN",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 40,
+            "10": 40,
+            "9": 40,
+            "6": 40,
+            "13": 40,
+            "8": 40,
+            "11": 40,
+            "7": 40,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "SWE",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 30,
+            "10": 30,
+            "9": 30,
+            "6": 30,
+            "13": 30,
+            "8": 30,
+            "11": 30,
+            "7": 30,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "NOR",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 40,
+            "10": 40,
+            "9": 40,
+            "6": 40,
+            "13": 40,
+            "8": 40,
+            "11": 40,
+            "7": 40,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "URSS",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 10,
+            "10": 10,
+            "9": 10,
+            "6": 10,
+            "13": 10,
+            "8": 10,
+            "11": 10,
+            "7": 10,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "RDA",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "POL",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "TCH",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 30,
+            "10": 30,
+            "9": 30,
+            "6": 30,
+            "13": 30,
+            "8": 30,
+            "11": 30,
+            "7": 30,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "NK",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 40,
+            "10": 40,
+            "9": 40,
+            "6": 40,
+            "13": 40,
+            "8": 40,
+            "11": 40,
+            "7": 40,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "ROK",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 30,
+            "10": 30,
+            "9": 30,
+            "6": 30,
+            "13": 30,
+            "8": 30,
+            "11": 30,
+            "7": 30,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "CHI",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 30,
+            "10": 30,
+            "9": 30,
+            "6": 30,
+            "13": 30,
+            "8": 30,
+            "11": 30,
+            "7": 30,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "JAP",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 30,
+            "10": 30,
+            "9": 30,
+            "6": 30,
+            "13": 30,
+            "8": 30,
+            "11": 30,
+            "7": 30,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "ANZ",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 30,
+            "10": 30,
+            "9": 30,
+            "6": 30,
+            "13": 30,
+            "8": 30,
+            "11": 30,
+            "7": 30,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "HOL",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "ISR",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 10,
+            "10": 10,
+            "9": 10,
+            "6": 10,
+            "13": 10,
+            "8": 10,
+            "11": 10,
+            "7": 10,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "FIN",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "YUG",
+        "Modifiers": {
+          "ActivationPoints": 15,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      }
+    ],
+    "ModifiersForCoalition": [
+      {
+        "GrantedTo": "EURO",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 0,
+            "10": 0,
+            "9": 0,
+            "6": 0,
+            "13": 0,
+            "8": 0,
+            "11": 0,
+            "7": 0,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "SCAND",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 15,
+            "10": 15,
+            "9": 15,
+            "6": 15,
+            "13": 15,
+            "8": 15,
+            "11": 15,
+            "7": 15,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "CMW",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 0,
+            "10": 0,
+            "9": 0,
+            "6": 0,
+            "13": 0,
+            "8": 0,
+            "11": 0,
+            "7": 0,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "BLUEDRAG",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "REDDRAG",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 20,
+            "10": 20,
+            "9": 20,
+            "6": 20,
+            "13": 20,
+            "8": 20,
+            "11": 20,
+            "7": 20,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "NSWP",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 0,
+            "10": 0,
+            "9": 0,
+            "6": 0,
+            "13": 0,
+            "8": 0,
+            "11": 0,
+            "7": 0,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "LAND",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 15,
+            "10": 15,
+            "9": 15,
+            "6": 15,
+            "13": 15,
+            "8": 15,
+            "11": 15,
+            "7": 15,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "NORAD",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 0,
+            "10": 0,
+            "9": 0,
+            "6": 0,
+            "13": 0,
+            "8": 0,
+            "11": 0,
+            "7": 0,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "NLGR",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 10,
+            "10": 10,
+            "9": 10,
+            "6": 10,
+            "13": 10,
+            "8": 10,
+            "11": 10,
+            "7": 10,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "FINPOL",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 10,
+            "10": 10,
+            "9": 10,
+            "6": 10,
+            "13": 10,
+            "8": 10,
+            "11": 10,
+            "7": 10,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "YUGVAK",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {
+            "3": 10,
+            "10": 10,
+            "9": 10,
+            "6": 10,
+            "13": 10,
+            "8": 10,
+            "11": 10,
+            "7": 10,
+            "12": 0
+          },
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      }
+    ],
+    "ModifiersForAlliance": [
+      {
+        "GrantedTo": "0",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "1",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      }
+    ],
+    "ModifiersForUnitType": [
+      {
+        "GrantedTo": "5E767965E3000000",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {
+            "10": -1,
+            "8": -1,
+            "6": -1
+          },
+          "SlotsAvailable": {
+            "10": 2,
+            "8": 2,
+            "6": 2
+          },
+          "ExperienceBonus": {
+            "10": 1,
+            "8": 1,
+            "6": 1
+          }
+        }
+      },
+      {
+        "GrantedTo": "5C76718B57360E00",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {
+            "9": -1
+          },
+          "SlotsAvailable": {
+            "9": 4
+          },
+          "ExperienceBonus": {
+            "9": 2
+          }
+        }
+      },
+      {
+        "GrantedTo": "DAD77965E3000000",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {
+            "13": -1,
+            "3": -1
+          },
+          "SlotsAvailable": {
+            "13": 4,
+            "3": 4
+          },
+          "ExperienceBonus": {
+            "13": 1
+          }
+        }
+      },
+      {
+        "GrantedTo": "23B8605ED9380000",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {
+            "7": -1,
+            "6": -1
+          },
+          "SlotsAvailable": {
+            "7": 2,
+            "12": 3,
+            "6": 2
+          },
+          "ExperienceBonus": {
+            "7": 1,
+            "6": 1
+          }
+        }
+      },
+      {
+        "GrantedTo": "8BD43C9757360E00",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {
+            "8": -1,
+            "6": -1
+          },
+          "SlotsAvailable": {
+            "8": 4,
+            "6": 4
+          },
+          "ExperienceBonus": {
+            "8": 1,
+            "6": 1
+          }
+        }
+      },
+      {
+        "GrantedTo": "0BB7685ED9380000",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {
+            "6": -1,
+            "11": -1,
+            "7": -1
+          },
+          "SlotsAvailable": {
+            "11": 4,
+            "7": 4,
+            "6": 4
+          },
+          "ExperienceBonus": {
+            "6": 1,
+            "11": 1,
+            "7": 1
+          }
+        }
+      },
+      {
+        "GrantedTo": "DA24755ED9380000",
+        "Modifiers": {
+          "ActivationPoints": 0,
+          "Availability": {},
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      }
+    ],
+    "ModifiersForUnitCategory": [
+      {
+        "GrantedTo": "41E22D4DD9380000",
+        "Modifiers": {
+          "ActivationPoints": 10,
+          "Availability": {},
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      },
+      {
+        "GrantedTo": "46E22D4DD9380000",
+        "Modifiers": {
+          "ActivationPoints": 5,
+          "Availability": {},
+          "ActivationCost": {},
+          "SlotsAvailable": {},
+          "ExperienceBonus": {}
+        }
+      }
+    ]
+  }
+}

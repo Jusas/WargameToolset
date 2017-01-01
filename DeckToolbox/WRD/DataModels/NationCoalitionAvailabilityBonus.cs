@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnitExtractor.DataModels
 {
+    [Obsolete]
     public class NationCoalitionAvailabilityBonus
     {
         public string NationCoalitionEugenString { get; set; }

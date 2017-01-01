@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DeckToolbox.WRD.DataModels
 {
+    [Obsolete]
     public class SpecializationVeterancyBonus
     {
         public int SpecializationEugenString { get; set; }

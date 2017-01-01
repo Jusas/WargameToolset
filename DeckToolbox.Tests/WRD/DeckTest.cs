@@ -6,6 +6,10 @@ using DeckToolbox.Utils;
 using DeckToolbox.WRD;
 using Xunit;
 using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using DeckToolbox.WRD.Resolvers;
+using Newtonsoft.Json.Serialization;
 using Xunit.Abstractions;
 
 namespace DeckToolbox.Tests
@@ -69,17 +73,9 @@ namespace DeckToolbox.Tests
 @Uk8ASLZAIA==
 @Uq8AS2VlQA==
 @Ur8AErQ=";
-            //string deckString = "@HiMBkykOxZcHZM9REmYhFTMQioSgc2F6BhgYWGBhggXSGQniJJiHdBIKKAxMpmIPQsMruCwSudJ8QVoGcggKbiHU";
+            string deckString = "@HiMBkykOxZcHZM9REmYhFTMQioSgc2F6BhgYWGBhggXSGQniJJiHdBIKKAxMpmIPQsMruCwSudJ8QVoGcggKbiHU";
 
-            var ds = decks.Split('\n');
-            foreach(var d in ds)
-            {
-                DecodedDeck dk = new DecodedDeck(d);
-                //output.WriteLine(dk.NationalityCode.ToString());
-                output.WriteLine(string.Join(" ", Convert.ToString(dk.CountryId, 2).PadLeft(10, '0')));
-            }
-
-            /*DecodedDeck deck = new DecodedDeck(deckString);
+            RawDeck deck = new RawDeck(deckString);
             Assert.True(deck.DecodedUnitCards.Count == 11);
             Assert.True(deck.DecodedUnitCards.Count(uc => uc.Id == 72) == 1);
             Assert.True(deck.DecodedUnitCards.Count(uc => uc.Id == 809 && uc.Ids.Contains(118)) == 1);
@@ -91,8 +87,35 @@ namespace DeckToolbox.Tests
             Assert.True(deck.DecodedUnitCards.Count(uc => uc.Id == 636) == 1);
             Assert.True(deck.DecodedUnitCards.Count(uc => uc.Id == 743) == 1);
             Assert.True(deck.DecodedUnitCards.Count(uc => uc.Id == 569) == 1);
-            Assert.True(deck.DecodedUnitCards.Count(uc => uc.Id == 23 && uc.Ids.Contains(48) && uc.Ids.Contains(573)) == 1);*/
+            Assert.True(deck.DecodedUnitCards.Count(uc => uc.Id == 23 && uc.Ids.Contains(48) && uc.Ids.Contains(573)) == 1);
         }
-        
+
+        [Fact]
+        public void ResolveRawDeckInfo()
+        {
+            string deckString = "@HiMBkykOxZcHZM9REmYhFTMQioSgc2F6BhgYWGBhggXSGQniJJiHdBIKKAxMpmIPQsMruCwSudJ8QVoGcggKbiHU";
+            var location = Path.Combine(Path.GetDirectoryName(typeof(RawDeck).GetTypeInfo().Assembly.Location), "WRD", "TestData");
+
+            JsonFileSourceDeckValueResolver dvr = new JsonFileSourceDeckValueResolver();
+            var ur = new JsonFileSourceUnitResolver();
+
+            dvr.JsonSourceFiles = Directory.GetFiles(location, "*.json");
+            dvr.Initialize();
+
+            ur.JsonSourceFiles = dvr.JsonSourceFiles.Where(x => x.Contains("Unit")).ToList();
+            ur.Initialize();
+
+            RawDeck deck = new RawDeck(deckString);
+            var coalition = dvr.GetCoalitionName(deck.CoalitionId);
+            var country = dvr.GetCountryName(deck.FactionId, deck.CountryId);
+            var cat = dvr.GetDeckEraName(deck.CategoryId);
+            var spec = dvr.GetDeckSpecializationName(deck.UnitTypeId);
+            var fac = dvr.GetFactionName(deck.FactionId);
+
+            var ud = ur.GetUnitData(deck.FactionId, deck.DecodedUnitCards.First().Id);
+
+            var ud2 = ur.GetUnitData(17870);
+        }
+
     }
 }

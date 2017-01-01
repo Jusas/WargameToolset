@@ -4,6 +4,7 @@ using System.Text;
 
 namespace DeckToolbox.WRD.DataModels
 {
+    [Obsolete]
     public class Nationality
     {
         public int Id { get; set; }

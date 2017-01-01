@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="DataModels\Configuration.cs" />
     <Compile Include="DataModels\DeckModifierSet.cs" />
+    <Compile Include="DataModels\ExportedDataTable.cs" />
     <Compile Include="DataModels\NationCoalitionAvailabilityBonus.cs" />
     <Compile Include="DataModels\SpecializationVeterancyBonus.cs" />
     <Compile Include="DataSource.cs" />

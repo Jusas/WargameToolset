@@ -1,0 +1,47 @@
+{
+  "MetaData": {
+    "DataIdentifier": "UnitTypes",
+    "ExtractedFrom": [
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510057270\\NDF_Win.dat:pc\\ndf\\patchable\\gfx\\everything.ndfbin",
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510053208\\510057270\\ZZ_Win.dat:pc\\localisation\\us\\localisation\\interface_outgame.dic"
+    ],
+    "ExtractionDate": null
+  },
+  "Data": [
+    {
+      "Id": 0,
+      "LocalizationId": "5E767965E3000000",
+      "Name": "#Motorised Motorized"
+    },
+    {
+      "Id": 1,
+      "LocalizationId": "5C76718B57360E00",
+      "Name": "#Armored Armored"
+    },
+    {
+      "Id": 2,
+      "LocalizationId": "DAD77965E3000000",
+      "Name": "#Support Support"
+    },
+    {
+      "Id": 3,
+      "LocalizationId": "23B8605ED9380000",
+      "Name": "#Marine Marines"
+    },
+    {
+      "Id": 4,
+      "LocalizationId": "8BD43C9757360E00",
+      "Name": "#Mecanized Mechanized"
+    },
+    {
+      "Id": 5,
+      "LocalizationId": "0BB7685ED9380000",
+      "Name": "#Airborne Airborne"
+    },
+    {
+      "Id": 6,
+      "LocalizationId": "DA24755ED9380000",
+      "Name": "#Naval #sea Navy"
+    }
+  ]
+}

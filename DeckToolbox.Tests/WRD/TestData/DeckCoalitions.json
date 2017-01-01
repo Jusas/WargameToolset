@@ -1,0 +1,59 @@
+{
+  "MetaData": {
+    "DataIdentifier": "UnitCoalitions",
+    "ExtractedFrom": [
+      "H:\\SteamLibrary\\SteamApps\\common\\Wargame Red Dragon\\Data\\WARGAME\\PC\\510057270\\NDF_Win.dat:pc\\ndf\\patchable\\gfx\\everything.ndfbin"
+    ],
+    "ExtractionDate": null
+  },
+  "Data": [
+    {
+      "Id": 0,
+      "Name": "EURO"
+    },
+    {
+      "Id": 1,
+      "Name": "SCAND"
+    },
+    {
+      "Id": 2,
+      "Name": "CMW"
+    },
+    {
+      "Id": 3,
+      "Name": "BLUEDRAG"
+    },
+    {
+      "Id": 4,
+      "Name": "REDDRAG"
+    },
+    {
+      "Id": 5,
+      "Name": "NSWP"
+    },
+    {
+      "Id": 6,
+      "Name": "LAND"
+    },
+    {
+      "Id": 7,
+      "Name": "JUCHE"
+    },
+    {
+      "Id": 8,
+      "Name": "NORAD"
+    },
+    {
+      "Id": 9,
+      "Name": "NLGR"
+    },
+    {
+      "Id": 10,
+      "Name": "FINPOL"
+    },
+    {
+      "Id": 11,
+      "Name": "YUGVAK"
+    }
+  ]
+}
