@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "DeckToolbox.Tests": {
-      "commandName": "Project",
-      "workingDirectory": "F:\\Web\\wargame-tools-site\\RDSiteNetCore10\\WargameToolset"
-    }
-  }
-}

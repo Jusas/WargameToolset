@@ -96,10 +96,14 @@ namespace DeckToolbox.Tests
             string deckString = "@HiMBkykOxZcHZM9REmYhFTMQioSgc2F6BhgYWGBhggXSGQniJJiHdBIKKAxMpmIPQsMruCwSudJ8QVoGcggKbiHU";
             var location = Path.Combine(Path.GetDirectoryName(typeof(RawDeck).GetTypeInfo().Assembly.Location), "WRD", "TestData");
 
-            JsonFileSourceDeckValueResolver dvr = new JsonFileSourceDeckValueResolver();
-            var ur = new JsonFileSourceUnitResolver();
+            // Using embedded test files because of a bug in visual studio 2017 rc.
+            var files = GetType().GetTypeInfo().Assembly.GetManifestResourceNames();
+            var jsonFileReader = new AssemblyJsonFileReader(GetType().GetTypeInfo().Assembly);
 
-            dvr.JsonSourceFiles = Directory.GetFiles(location, "*.json");
+            JsonFileSourceDeckValueResolver dvr = new JsonFileSourceDeckValueResolver(jsonFileReader);
+            var ur = new JsonFileSourceUnitResolver(jsonFileReader);
+
+            dvr.JsonSourceFiles = files;
             dvr.Initialize();
 
             ur.JsonSourceFiles = dvr.JsonSourceFiles.Where(x => x.Contains("Unit")).ToList();

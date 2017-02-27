@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using DeckToolbox.Utils;
 using DeckToolbox.WRD.DataModels;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -13,10 +14,12 @@ namespace DeckToolbox.WRD.Resolvers
     {
         public IList<string> JsonSourceFiles { get; set; }
         private Dictionary<string, JToken> _dataSources = new Dictionary<string, JToken>();
+        private IJsonFileReader _jsonFileReader;
 
-        public JsonFileSourceUnitResolver()
+        public JsonFileSourceUnitResolver(IJsonFileReader jsonReader)
         {
             JsonSourceFiles = new List<string>();
+            _jsonFileReader = jsonReader;
         }
 
         public void Initialize()
@@ -25,7 +28,7 @@ namespace DeckToolbox.WRD.Resolvers
             {
                 try
                 {
-                    var txt = File.ReadAllText(file);
+                    var txt = _jsonFileReader.ReadFile(file);
                     var dataSource = JToken.Parse(txt);
                     var id = dataSource["MetaData"]["DataIdentifier"].ToString();
                     var data = dataSource["Data"];
